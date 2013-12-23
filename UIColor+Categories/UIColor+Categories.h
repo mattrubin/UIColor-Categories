@@ -23,4 +23,5 @@
 //  THE SOFTWARE.
 //
 
+#import "UIColor+Macros.h"
 #import "UIColor+Integers.h"
