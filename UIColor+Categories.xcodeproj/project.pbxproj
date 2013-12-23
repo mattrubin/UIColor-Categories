@@ -48,13 +48,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C9EFC0831867C60E002A911C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C9EFC0931867C60E002A911C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,7 +103,6 @@
 			buildConfigurationList = C9EFC0A91867C60E002A911C /* Build configuration list for PBXNativeTarget "UIColor+Categories" */;
 			buildPhases = (
 				C9EFC0821867C60E002A911C /* Sources */,
-				C9EFC0831867C60E002A911C /* Frameworks */,
 				C9EFC0841867C60E002A911C /* CopyFiles */,
 			);
 			buildRules = (
@@ -128,7 +120,6 @@
 			buildPhases = (
 				C9EFC0921867C60E002A911C /* Sources */,
 				C9EFC0931867C60E002A911C /* Frameworks */,
-				C9EFC0941867C60E002A911C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -166,16 +157,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		C9EFC0941867C60E002A911C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9EFC0821867C60E002A911C /* Sources */ = {
