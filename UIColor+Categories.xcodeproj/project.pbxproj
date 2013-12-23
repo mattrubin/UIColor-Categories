@@ -13,8 +13,8 @@
 		C9EFC0991867C60E002A911C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EFC0891867C60E002A911C /* Foundation.framework */; };
 		C9EFC09B1867C60E002A911C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EFC09A1867C60E002A911C /* UIKit.framework */; };
 		C9EFC09E1867C60E002A911C /* libUIColor+Categories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EFC0861867C60E002A911C /* libUIColor+Categories.a */; };
-		C9EFC0A61867C60E002A911C /* UIColor_CategoriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EFC0A51867C60E002A911C /* UIColor_CategoriesTests.m */; };
 		C9EFC0B31867F93A002A911C /* UIColor+Integers.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EFC0B21867F93A002A911C /* UIColor+Integers.m */; };
+		C9EFC0B518680735002A911C /* UIColorIntegerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EFC0B418680735002A911C /* UIColorIntegerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,9 @@
 		C9EFC0961867C60E002A911C /* UIColor+CategoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIColor+CategoriesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EFC0971867C60E002A911C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C9EFC09A1867C60E002A911C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C9EFC0A51867C60E002A911C /* UIColor_CategoriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIColor_CategoriesTests.m; sourceTree = "<group>"; };
 		C9EFC0B11867F93A002A911C /* UIColor+Integers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Integers.h"; sourceTree = "<group>"; };
 		C9EFC0B21867F93A002A911C /* UIColor+Integers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Integers.m"; sourceTree = "<group>"; };
+		C9EFC0B418680735002A911C /* UIColorIntegerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorIntegerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 		C9EFC09F1867C60E002A911C /* UIColor+CategoriesTests */ = {
 			isa = PBXGroup;
 			children = (
-				C9EFC0A51867C60E002A911C /* UIColor_CategoriesTests.m */,
+				C9EFC0B418680735002A911C /* UIColorIntegerTests.m */,
 			);
 			path = "UIColor+CategoriesTests";
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9EFC0A61867C60E002A911C /* UIColor_CategoriesTests.m in Sources */,
+				C9EFC0B518680735002A911C /* UIColorIntegerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +259,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -290,6 +291,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -299,7 +301,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/UIColor_Categories.dst;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -309,7 +310,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/UIColor_Categories.dst;
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -366,6 +366,7 @@
 				C9EFC0AB1867C60E002A911C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9EFC0AC1867C60E002A911C /* Build configuration list for PBXNativeTarget "UIColor+CategoriesTests" */ = {
 			isa = XCConfigurationList;
@@ -374,6 +375,7 @@
 				C9EFC0AE1867C60E002A911C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
