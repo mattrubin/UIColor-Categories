@@ -34,6 +34,18 @@
 
 @implementation UIColorIntegerTests
 
+- (void)testWhite
+{
+    XCTAssertEqualObjects([UIColor colorWithIntegerWhite:77],
+                          [UIColor colorWithIntegerWhite:77 alpha:100]);
+}
+
+- (void)testWhiteA
+{
+    XCTAssertEqualObjects([UIColor colorWithIntegerWhite:77 alpha:22],
+                          [UIColor colorWithWhite:0.77 alpha:0.22]);
+}
+
 - (void)testRGB
 {
     XCTAssertEqualObjects([UIColor colorWithIntegerRed:111 green:222 blue:0],

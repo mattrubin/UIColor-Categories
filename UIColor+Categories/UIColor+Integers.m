@@ -34,10 +34,28 @@ static const CGFloat hueDivisor = 360;
 static const CGFloat saturationDivisor = 100;
 static const CGFloat brightnessDivisor = 100;
 
+static const CGFloat whiteDivisor = 100;
 static const CGFloat alphaDivisor = 100;
 
 
 @implementation UIColor (Integers)
+
+#pragma mark - Grayscale
+
++ (instancetype)colorWithIntegerWhite:(CGFloat)white
+{
+    return [self colorWithIntegerWhite:white
+                                 alpha:alphaDivisor];
+}
+
++ (instancetype)colorWithIntegerWhite:(CGFloat)white alpha:(CGFloat)alpha
+{
+    return [self colorWithWhite:white/whiteDivisor
+                          alpha:alpha/alphaDivisor];
+}
+
+
+#pragma mark - RGB
 
 + (instancetype)colorWithIntegerRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue
 {
@@ -54,6 +72,9 @@ static const CGFloat alphaDivisor = 100;
                          blue:blue/blueDivisor
                         alpha:alpha/alphaDivisor];
 }
+
+
+#pragma mark - HSB
 
 + (instancetype)colorWithIntegerHue:(NSUInteger)hue saturation:(NSUInteger)saturation brightness:(NSUInteger)brightness
 {
