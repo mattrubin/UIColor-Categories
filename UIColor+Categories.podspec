@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "UIColor+Categories"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "A collection of useful methods to extend UIColor."
   s.homepage     = "https://github.com/mattrubin/UIColor-Categories"
   s.license      = 'MIT'
