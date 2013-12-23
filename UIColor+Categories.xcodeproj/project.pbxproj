@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C993DA341868122700F77C08 /* UIColor+Integers.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9EFC0B11867F93A002A911C /* UIColor+Integers.h */; };
+		C993DA401868B10600F77C08 /* UIColorMacroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C993DA3F1868B10600F77C08 /* UIColorMacroTests.m */; };
 		C9EFC08F1867C60E002A911C /* UIColor+Categories.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9EFC08E1867C60E002A911C /* UIColor+Categories.h */; };
 		C9EFC09E1867C60E002A911C /* libUIColor+Categories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EFC0861867C60E002A911C /* libUIColor+Categories.a */; };
 		C9EFC0B31867F93A002A911C /* UIColor+Integers.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EFC0B21867F93A002A911C /* UIColor+Integers.m */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		C993DA3918681D8A00F77C08 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C993DA3A18681D8A00F77C08 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C993DA3C1868AEF200F77C08 /* UIColor+Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Macros.h"; sourceTree = "<group>"; };
+		C993DA3F1868B10600F77C08 /* UIColorMacroTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorMacroTests.m; sourceTree = "<group>"; };
 		C9EFC0861867C60E002A911C /* libUIColor+Categories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libUIColor+Categories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EFC08E1867C60E002A911C /* UIColor+Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Categories.h"; sourceTree = "<group>"; };
 		C9EFC0961867C60E002A911C /* UIColor+Categories Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIColor+Categories Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +98,7 @@
 				C9EFC08E1867C60E002A911C /* UIColor+Categories.h */,
 				C9EFC0B11867F93A002A911C /* UIColor+Integers.h */,
 				C9EFC0B21867F93A002A911C /* UIColor+Integers.m */,
+				C993DA3C1868AEF200F77C08 /* UIColor+Macros.h */,
 			);
 			path = "UIColor+Categories";
 			sourceTree = "<group>";
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				C9EFC0B418680735002A911C /* UIColorIntegerTests.m */,
+				C993DA3F1868B10600F77C08 /* UIColorMacroTests.m */,
 			);
 			path = "UIColor+Categories Tests";
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C993DA401868B10600F77C08 /* UIColorMacroTests.m in Sources */,
 				C9EFC0B518680735002A911C /* UIColorIntegerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
