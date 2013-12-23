@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C9EFC08A1867C60E002A911C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EFC0891867C60E002A911C /* Foundation.framework */; };
-		C9EFC08F1867C60E002A911C /* UIColor_Categories.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9EFC08E1867C60E002A911C /* UIColor_Categories.h */; };
-		C9EFC0911867C60E002A911C /* UIColor_Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EFC0901867C60E002A911C /* UIColor_Categories.m */; };
+		C9EFC08F1867C60E002A911C /* UIColor+Categories.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9EFC08E1867C60E002A911C /* UIColor+Categories.h */; };
 		C9EFC0981867C60E002A911C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EFC0971867C60E002A911C /* XCTest.framework */; };
 		C9EFC0991867C60E002A911C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EFC0891867C60E002A911C /* Foundation.framework */; };
 		C9EFC09B1867C60E002A911C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EFC09A1867C60E002A911C /* UIKit.framework */; };
@@ -35,7 +34,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				C9EFC08F1867C60E002A911C /* UIColor_Categories.h in CopyFiles */,
+				C9EFC08F1867C60E002A911C /* UIColor+Categories.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +44,7 @@
 		C9EFC0861867C60E002A911C /* libUIColor+Categories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libUIColor+Categories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EFC0891867C60E002A911C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9EFC08D1867C60E002A911C /* UIColor+Categories-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Categories-Prefix.pch"; sourceTree = "<group>"; };
-		C9EFC08E1867C60E002A911C /* UIColor_Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIColor_Categories.h; sourceTree = "<group>"; };
-		C9EFC0901867C60E002A911C /* UIColor_Categories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIColor_Categories.m; sourceTree = "<group>"; };
+		C9EFC08E1867C60E002A911C /* UIColor+Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Categories.h"; sourceTree = "<group>"; };
 		C9EFC0961867C60E002A911C /* UIColor+CategoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIColor+CategoriesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EFC0971867C60E002A911C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C9EFC09A1867C60E002A911C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -110,8 +108,7 @@
 		C9EFC08B1867C60E002A911C /* UIColor+Categories */ = {
 			isa = PBXGroup;
 			children = (
-				C9EFC08E1867C60E002A911C /* UIColor_Categories.h */,
-				C9EFC0901867C60E002A911C /* UIColor_Categories.m */,
+				C9EFC08E1867C60E002A911C /* UIColor+Categories.h */,
 				C9EFC08C1867C60E002A911C /* Supporting Files */,
 			);
 			path = "UIColor+Categories";
@@ -224,7 +221,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9EFC0911867C60E002A911C /* UIColor_Categories.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
