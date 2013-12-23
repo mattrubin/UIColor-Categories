@@ -39,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C993DA3918681D8A00F77C08 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		C993DA3A18681D8A00F77C08 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C9EFC0861867C60E002A911C /* libUIColor+Categories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libUIColor+Categories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EFC08E1867C60E002A911C /* UIColor+Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Categories.h"; sourceTree = "<group>"; };
 		C9EFC0961867C60E002A911C /* UIColor+Categories Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIColor+Categories Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C993DA3B18681D9000F77C08 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				C993DA3918681D8A00F77C08 /* README.md */,
+				C993DA3A18681D8A00F77C08 /* LICENSE */,
+			);
+			name = Docs;
+			sourceTree = "<group>";
+		};
 		C9EFC07D1867C60E002A911C = {
 			isa = PBXGroup;
 			children = (
 				C9EFC08B1867C60E002A911C /* UIColor+Categories */,
 				C9EFC09F1867C60E002A911C /* UIColor+Categories Tests */,
 				C9EFC0871867C60E002A911C /* Products */,
+				C993DA3B18681D9000F77C08 /* Docs */,
 			);
 			sourceTree = "<group>";
 		};
