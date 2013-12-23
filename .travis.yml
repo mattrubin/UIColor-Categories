@@ -1,0 +1,5 @@
+language: objective-c
+
+xcode_project: UIColor+Categories.xcodeproj
+xcode_scheme: UIColor+Categories
+xcode_sdk: iphonesimulator
