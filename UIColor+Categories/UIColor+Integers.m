@@ -39,12 +39,28 @@ static const CGFloat alphaDivisor = 100;
 
 @implementation UIColor (Integers)
 
++ (instancetype)colorWithIntegerRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue
+{
+    return [self colorWithIntegerRed:red
+                               green:green
+                                blue:blue
+                               alpha:alphaDivisor];
+}
+
 + (instancetype)colorWithIntegerRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue alpha:(NSUInteger)alpha
 {
     return [self colorWithRed:red/redDivisor
                         green:green/greenDivisor
                          blue:blue/blueDivisor
                         alpha:alpha/alphaDivisor];
+}
+
++ (instancetype)colorWithIntegerHue:(NSUInteger)hue saturation:(NSUInteger)saturation brightness:(NSUInteger)brightness
+{
+    return [self colorWithIntegerHue:hue
+                          saturation:saturation
+                          brightness:brightness
+                               alpha:alphaDivisor];
 }
 
 + (instancetype)colorWithIntegerHue:(NSUInteger)hue saturation:(NSUInteger)saturation brightness:(NSUInteger)brightness alpha:(NSUInteger)alpha

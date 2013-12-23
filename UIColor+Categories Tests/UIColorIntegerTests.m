@@ -36,11 +36,23 @@
 
 - (void)testRGB
 {
+    XCTAssertEqualObjects([UIColor colorWithIntegerRed:111 green:222 blue:0],
+                          [UIColor colorWithIntegerRed:111 green:222 blue:0 alpha:100]);
+}
+
+- (void)testRGBA
+{
     XCTAssertEqualObjects([UIColor colorWithIntegerRed:51 green:102 blue:153 alpha:50],
                           [UIColor colorWithRed:0.2 green:0.4 blue:0.6 alpha:0.5]);
 }
 
 - (void)testHSB
+{
+    XCTAssertEqualObjects([UIColor colorWithIntegerHue:127 saturation:73 brightness:42],
+                          [UIColor colorWithIntegerHue:127 saturation:73 brightness:42 alpha:100]);
+}
+
+- (void)testHSBA
 {
     XCTAssertEqualObjects([UIColor colorWithIntegerHue:120 saturation:50 brightness:100 alpha:50],
                           [UIColor colorWithRed:0.5 green:1.0 blue:0.5 alpha:0.5]);
