@@ -40,4 +40,13 @@
                           [UIColor colorWithRed:0.2 green:0.4 blue:0.6 alpha:0.5]);
 }
 
+- (void)testHSB
+{
+    XCTAssertEqualObjects([UIColor colorWithIntegerHue:120 saturation:50 brightness:100 alpha:50],
+                          [UIColor colorWithRed:0.5 green:1.0 blue:0.5 alpha:0.5]);
+
+    XCTAssertEqualObjects([UIColor colorWithIntegerHue:180 saturation:100 brightness:50 alpha:10],
+                          [UIColor colorWithRed:0 green:0.5 blue:0.5 alpha:0.1]);
+}
+
 @end

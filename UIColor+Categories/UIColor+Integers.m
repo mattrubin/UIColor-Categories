@@ -33,4 +33,9 @@
     return [self colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:alpha/100.0];
 }
 
++ (instancetype)colorWithIntegerHue:(NSUInteger)hue saturation:(NSUInteger)saturation brightness:(NSUInteger)brightness alpha:(NSUInteger)alpha
+{
+    return [self colorWithHue:hue/360.0 saturation:saturation/100.0 brightness:brightness/100.0 alpha:alpha/100.0];
+}
+
 @end
