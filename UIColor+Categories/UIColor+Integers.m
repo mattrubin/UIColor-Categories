@@ -42,13 +42,13 @@ static const CGFloat alphaDivisor = 100;
 
 #pragma mark - Grayscale
 
-+ (instancetype)colorWithIntegerWhite:(CGFloat)white
++ (instancetype)colorWithIntegerWhite:(NSUInteger)white
 {
     return [self colorWithIntegerWhite:white
                                  alpha:alphaDivisor];
 }
 
-+ (instancetype)colorWithIntegerWhite:(CGFloat)white alpha:(CGFloat)alpha
++ (instancetype)colorWithIntegerWhite:(NSUInteger)white alpha:(NSUInteger)alpha
 {
     return [self colorWithWhite:white/whiteDivisor
                           alpha:alpha/alphaDivisor];

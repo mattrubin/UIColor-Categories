@@ -28,8 +28,8 @@
 
 @interface UIColor (Integers)
 
-+ (instancetype)colorWithIntegerWhite:(CGFloat)white;
-+ (instancetype)colorWithIntegerWhite:(CGFloat)white alpha:(CGFloat)alpha;
++ (instancetype)colorWithIntegerWhite:(NSUInteger)white;
++ (instancetype)colorWithIntegerWhite:(NSUInteger)white alpha:(NSUInteger)alpha;
 
 + (instancetype)colorWithIntegerRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue;
 + (instancetype)colorWithIntegerRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue alpha:(NSUInteger)alpha;
