@@ -26,16 +26,33 @@
 #import "UIColor+Integers.h"
 
 
+static const CGFloat redDivisor = 255;
+static const CGFloat greenDivisor = 255;
+static const CGFloat blueDivisor = 255;
+
+static const CGFloat hueDivisor = 360;
+static const CGFloat saturationDivisor = 100;
+static const CGFloat brightnessDivisor = 100;
+
+static const CGFloat alphaDivisor = 100;
+
+
 @implementation UIColor (Integers)
 
 + (instancetype)colorWithIntegerRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue alpha:(NSUInteger)alpha
 {
-    return [self colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:alpha/100.0];
+    return [self colorWithRed:red/redDivisor
+                        green:green/greenDivisor
+                         blue:blue/blueDivisor
+                        alpha:alpha/alphaDivisor];
 }
 
 + (instancetype)colorWithIntegerHue:(NSUInteger)hue saturation:(NSUInteger)saturation brightness:(NSUInteger)brightness alpha:(NSUInteger)alpha
 {
-    return [self colorWithHue:hue/360.0 saturation:saturation/100.0 brightness:brightness/100.0 alpha:alpha/100.0];
+    return [self colorWithHue:hue/hueDivisor
+                   saturation:saturation/saturationDivisor
+                   brightness:brightness/brightnessDivisor
+                        alpha:alpha/alphaDivisor];
 }
 
 @end
