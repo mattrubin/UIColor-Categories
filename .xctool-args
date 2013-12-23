@@ -1,0 +1,5 @@
+[
+  "-project", "UIColor+Categories.xcodeproj",
+  "-scheme", "UIColor+Categories",
+  "-sdk", "iphonesimulator",
+]
